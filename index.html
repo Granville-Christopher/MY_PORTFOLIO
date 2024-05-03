@@ -885,13 +885,13 @@
         var message = document.getElementById("cf-message").value;
 
         // Compose the email body with the name, email, and message
-        var emailBody = "Name: " + name + "\n" +
-                        "Email: " + email + "\n" +
-                        "Message: " + message;
+        var emailBody =  + name + "\n" +
+                         + email + "\n" +
+                         + message;
 
         // Construct the mailto link with the email address and subject
         var mailtoLink = "mailto:christophergranville2@gmail.com" + 
-                         "?subject=Hello Granville" +
+                         "?subject=Hello Granville " +
                          "&body="+"Good day, Granville" + encodeURIComponent(emailBody);
 
         // Open the default email client with the pre-filled email fields
