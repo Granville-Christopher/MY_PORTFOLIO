@@ -884,12 +884,12 @@
 
         // Compose the email body with the name, email, and message
         var emailBody = " \n " + name + "\n" +
-                         email + "\n" +
+                         email + "\n" + "  \n\n\n Good day, Granville \n"
                          message;
 
         var mailtoLink = "mailto:christophergranville2@gmail.com" + 
                          "?subject=Hello Granville \n " +
-                         "&body=" + encodeURIComponent(emailBody) +"  \n\n\n Good day, Granville \n";
+                         "&body=" + encodeURIComponent(emailBody) ;
 
         window.location.href = mailtoLink;
     }
