@@ -887,12 +887,10 @@
                          email + "\n" +
                          message;
 
-        // Construct the mailto link with the email address and subject
         var mailtoLink = "mailto:christophergranville2@gmail.com" + 
-                         "?subject=Hello Granville \n" +
-                         "&body="+"Good day, Granville" + encodeURIComponent(emailBody);
+                         "?subject=Hello Granville \n " +
+                         "&body="+"Good day, Granville \n" + encodeURIComponent(emailBody);
 
-        // Open the default email client with the pre-filled email fields
         window.location.href = mailtoLink;
     }
 
